@@ -122,3 +122,27 @@ export function numeroComEmoji(n) {
     .map((d) => DIGIT_EMOJI[d] || d)
     .join("")
 }
+
+// Escolhe um emoji de acordo com o tipo do premio (analisa palavras-chave)
+export function emojiDoPremio(texto) {
+  const t = texto.toLowerCase()
+
+  if (t.includes("voucher")) return "\uD83C\uDF9F\uFE0F" // 🎟️
+  if (t.includes("vale")) return "\u2694\uFE0F" // ⚔️
+  if (t.includes("exp")) return "\uD83D\uDCDC" // 📜
+  if (t.includes("yuls")) return "\uD83D\uDCB0" // 💰
+  if (t.includes("dracmas")) return "\uD83E\uDE99" // 🪙
+  if (t.includes("fichas")) return "\uD83C\uDFB0" // 🎰
+  if (t.includes("passe vip")) return "\uD83C\uDFAB" // 🎫
+  if (t.includes("evento")) return "\uD83C\uDF8A" // 🎊
+  if (t.includes("dado")) return "\uD83C\uDFB2" // 🎲
+  if (t.includes("tecnica") || t.includes("ataque") || t.includes("defesa") || t.includes("paralisia") || t.includes("barreira"))
+    return "\u26A1" // ⚡
+  if (t.includes("caixa") || t.includes("bencao") || t.includes("escolha") || t.includes("grimorio"))
+    return "\uD83D\uDCE6" // 📦
+  if (t.includes("roubo")) return "\uD83E\uDD77" // 🥷
+  if (t.includes("treino")) return "\uD83E\uDD4A" // 🥊
+  if (t.includes("missoes") || t.includes("missao")) return "\uD83D\uDDFA\uFE0F" // 🗺️
+
+  return "\uD83C\uDF81" // 🎁 (padrao)
+}
