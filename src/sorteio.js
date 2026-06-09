@@ -1,4 +1,4 @@
-import { PREMIOS, numeroComEmoji } from "./premios.js"
+import { PREMIOS, numeroComEmoji, emojiDoPremio } from "./premios.js"
 
 // Sorteia "quantidade" numeros aleatorios unicos de 1 a 100
 export function sortearNumeros(quantidade) {
@@ -17,15 +17,18 @@ export function sortearNumeros(quantidade) {
 // Monta a mensagem de resposta de um sorteio
 export function montarMensagemSorteio(numeros) {
   const linhas = numeros.map((n) => {
-    return `${numeroComEmoji(n)} -> ${PREMIOS[n]}`
+    const premio = PREMIOS[n]
+    return `${numeroComEmoji(n)}${emojiDoPremio(premio)} ${premio}`
   })
 
   return [
-    "\uD83C\uDFB0 ROLETA DA CAIXA MAGICA DIAMOND \uD83C\uDFB0",
+    "\uD83C\uDFB0 Resultado \u2014 Caixa M\u00E1gica de Vallen Faust \uD83C\uDFB0",
     "",
-    `Numeros sorteados: ${numeros.length}`,
+    "\u2796\u1AD3\u2796\u1AD3\u2772\uD83C\uDFB2\uD83D\uDCE6\uD83C\uDFB2\u2773\u1AD3\u2796\u1AD3\u2796",
     "",
-    ...linhas,
+    "\uD83C\uDFC6 Recompensas Obtidas:",
+    "",
+    linhas.join("\n\n"),
   ].join("\n")
 }
 
