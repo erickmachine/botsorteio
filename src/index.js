@@ -16,15 +16,29 @@ const logger = pino({ level: "silent" })
 
 // Texto de ajuda
 const TEXTO_AJUDA = [
-  "\uD83C\uDFB0 *BOT DA CAIXA MAGICA DIAMOND* \uD83C\uDFB0",
+  "\uD83C\uDFB0 *VallenBot \u2014 Caixa M\u00E1gica de Vallen Faust* \uD83C\uDFB0",
   "",
-  "Comandos disponiveis:",
+  "\u2796\u1AD3\u2796\u1AD3\u2772\uD83C\uDFB2\uD83D\uDCE6\uD83C\uDFB2\u2773\u1AD3\u2796\u1AD3\u2796",
   "",
-  "*/sorteio* - Sorteia 1 numero (1 a 100)",
-  "*/sorteio 4* - Sorteia 4 numeros aleatorios",
-  "*/sorteio 3, 5* - Faz 2 sorteios: um de 3 e outro de 5 numeros",
-  "*/premio 22* - Mostra qual e o premio do numero 22",
-  "*/ajuda* - Mostra esta mensagem",
+  "\uD83D\uDCDC *Comandos dispon\u00EDveis:*",
+  "",
+  "\uD83C\uDFB2 */sorteio* \u2014 Sorteia 1 n\u00FAmero (1 a 100)",
+  "",
+  "\uD83C\uDFB2 */sorteio 4* \u2014 Sorteia 4 n\u00FAmeros aleat\u00F3rios",
+  "",
+  "\uD83C\uDFB2 */sorteio 3, 5* \u2014 Faz 2 sorteios: um de 3 e outro de 5 n\u00FAmeros",
+  "",
+  "\uD83C\uDF81 */premio 22* \u2014 Mostra qual \u00E9 o pr\u00EAmio do n\u00FAmero 22",
+  "",
+  "\u2139\uFE0F */ajuda* \u2014 Mostra esta mensagem",
+  "",
+  "\u2796\u1AD3\u2796\u1AD3\u2772\uD83C\uDFB2\uD83D\uDCE6\uD83C\uDFB2\u2773\u1AD3\u2796\u1AD3\u2796",
+  "",
+  "\uD83E\uDD16 *Nick do Bot:* VallenBot",
+  "\uD83D\uDC51 *Dono do Bot:* +55 66 99246-4577",
+  "\uD83D\uDC65 *Acesso:* Liberado para todos do grupo",
+  "",
+  "\u2699\uFE0F *Desenvolvido por 9devs*",
 ].join("\n")
 
 async function iniciarBot() {
