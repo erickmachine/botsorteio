@@ -1,17 +1,15 @@
-import baileys from "@whiskeysockets/baileys"
+import {
+  makeWASocket,
+  useMultiFileAuthState,
+  DisconnectReason,
+  fetchLatestBaileysVersion,
+} from "@whiskeysockets/baileys"
 import { Boom } from "@hapi/boom"
 import qrcode from "qrcode-terminal"
 import pino from "pino"
 
 import { PREMIOS } from "./premios.js"
 import { sortearNumeros, montarMensagemSorteio, parseQuantidades } from "./sorteio.js"
-
-const {
-  default: makeWASocket,
-  useMultiFileAuthState,
-  DisconnectReason,
-  fetchLatestBaileysVersion,
-} = baileys
 
 // Logger silencioso (so erros) para nao poluir o terminal
 const logger = pino({ level: "silent" })
