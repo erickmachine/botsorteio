@@ -3,7 +3,7 @@ export const PREMIOS = {
   1: "Voucher 25% Mercado Negro",
   2: "Vale 03 Missoes de Historia (Pode Ser Presenteado)",
   3: "150 Yuls",
-  4: "Passe VIP: Sala do Rei Mago (Diamond)",
+  4: "T\u00E9cnica Tempor\u00E1ria por 7 Dias",
   5: "10 EXP",
   6: "Vale 04 Recrutas (Pode Ser Presenteado)",
   7: "Fuga da Caixa Magica",
@@ -21,22 +21,22 @@ export const PREMIOS = {
   19: "Passe VIP: Boss",
   20: "500 Dracmas",
   21: "Vale 02 Recrutas (Pode Ser Presenteado)",
-  22: "Caixa Mimetica (vira outro premio aleatorio)",
+  22: "Reative um Card j\u00E1 Usado",
   23: "100 Dracmas",
   24: "Voucher 40% Loja de Yuls",
   25: "Vale 10 Lutas (Pode Ser Presenteado)",
   26: "EXP de Juiz Dobrado (Uma Semana)",
   27: "Controle de Cards Especial (Exceto Ativacoes)",
-  28: "Passe VIP: Evento Tematico de Fichas (Junho)",
+  28: "+10 Exp pra voc\u00EA, e +5 para um amigo",
   29: "Vale 01 Missao de Historia",
   30: "250 Yuls",
-  31: 'Vale "Inscricoes Eventos - Maio"',
+  31: "O jogador pode escolher trocar o pr\u00EAmio que tirou pelo pr\u00EAmio do n\u00FAmero anterior ou posterior na lista",
   32: "Fichas de Cassino: 150 Fichas",
   33: "Voucher 20% Loja de Yuls",
   34: "Vale 01 Tecnica Personalizada (Redesenho de Tecnica ou Espada)",
   35: "300 Dracmas",
   36: "Replicas da Caixa Magica",
-  37: "Passe VIP: Torre de Diamond",
+  37: "Copia o \u00FAltimo pr\u00EAmio que outro jogador tirou na roleta antes de voc\u00EA",
   38: "Vale 05 Recrutas (Pode Ser Presenteado)",
   39: "15 EXP",
   40: "Dado da Sorte (Rerrolar Resultado)",
@@ -49,7 +49,7 @@ export const PREMIOS = {
   47: "150 Dracmas",
   48: "Amplificacao da Caixa (ATV da Caixa Magica)",
   49: "Vale 01 Loja de Yuls (A Escolha)",
-  50: "Passe VIP: Sala do Rei Mago (Clover)",
+  50: "Escolha um n\u00FAmero de 1 a 100. Se at\u00E9 a pr\u00F3xima semana voc\u00EA ou qualquer outro jogador tirar esse n\u00FAmero exato na roleta, voc\u00EA ganha 200 Yuls de b\u00F4nus.",
   51: "Vale 08 Lutas (Pode Ser Presenteado)",
   52: "Voucher 35% Mercado Negro",
   53: "Evento Tematico Sobre Voce",
@@ -66,7 +66,7 @@ export const PREMIOS = {
   64: "Vale 01 Missao de Divulgacao",
   65: "200 Yuls",
   66: "Todos os EXP Sao Dobrados (Uma Semana)",
-  67: 'Vale "Inscricoes Torneios - Maio"',
+  67: "Sua pr\u00F3xima compra acima de 500 Yuls na loja pode ser parcelada com o Mestre (paga metade agora e metade na pr\u00F3xima semana).",
   68: "250 Dracmas",
   69: "Grimorio Misterioso (Escolha o Tipo do Proximo Card Par)",
   70: "Vale Treino Especial com Capitao/Superior a Escolha",
@@ -92,7 +92,7 @@ export const PREMIOS = {
   90: "200 Dracmas",
   91: "Voucher 30% Mercado Negro",
   92: "Vale 03 Recrutas (Pode Ser Presenteado)",
-  93: "Passe VIP: Evento Tematico de Fichas (Junho)",
+  93: "Yuls dobrados por uma semana",
   94: "Fichas de Cassino: 250 Fichas",
   95: "100 Yuls",
   96: "Voucher 100% Loja de Yuls",
@@ -130,8 +130,8 @@ export function emojiDoPremio(texto) {
   if (t.includes("voucher")) return "\uD83C\uDF9F\uFE0F" // 🎟️
   if (t.includes("vale")) return "\u2694\uFE0F" // ⚔️
   if (t.includes("exp")) return "\uD83D\uDCDC" // 📜
-  if (t.includes("yuls")) return "\uD83D\uDCB0" // 💰
-  if (t.includes("dracmas")) return "\uD83E\uDE99" // 🪙
+  if (t.includes("yuls")) return "\uD83E\uDE99" // 🪙
+  if (t.includes("dracmas")) return "\uD83D\uDCB0" // 💰
   if (t.includes("fichas")) return "\uD83C\uDFB0" // 🎰
   if (t.includes("passe vip")) return "\uD83C\uDFAB" // 🎫
   if (t.includes("evento")) return "\uD83C\uDF8A" // 🎊
