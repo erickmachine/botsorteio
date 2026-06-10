@@ -16,7 +16,7 @@ const logger = pino({ level: "silent" })
 
 // Texto de ajuda
 const TEXTO_AJUDA = [
-  "\uD83C\uDFB0 *VallenBot \u2014 Caixa M\u00E1gica de Vallen Faust* \uD83C\uDFB0",
+  "\uD83C\uDFB0 *VallenBot \u2014 ROLETA DA CAIXA M\u00C1GICA* \uD83C\uDFB0",
   "",
   "\u2796\u1AD3\u2796\u1AD3\u2772\uD83C\uDFB2\uD83D\uDCE6\uD83C\uDFB2\u2773\u1AD3\u2796\u1AD3\u2796",
   "",
